@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitacion-Gregoria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="contenedor-bienvenida">
+    <div class="tarjeta-bienvenida">
+      <p class="subtitulo">La comunion de</p>
+      <div class="foto-comunion">
+        <img src="img/comunion_solo_circulo.webp" alt="Comunión Gregoria">
+      </div>
+      <h1 class="nombre">Gregoria</h1>
+      <p class="mensaje">Te invito a compartir conmigo este día tan especial.</p>
+    </div>
+  </main>
+
+  <!-- Contenedor Contador -->
+  <section class="contenedor-contador">
+    <div class="info-fecha">
+      <p class="fecha-dia">Sábado 14 de Noviembre</p>
+      <p class="fecha-hora">19:00 hs</p>
+    </div>
+    <h2 class="contador-titulo">Faltan</h2>
+    <div class="contador-grid">
+      <div class="contador-item">
+        <span class="contador-numero" id="dias">00</span>
+        <span class="contador-etiqueta">Días</span>
+      </div>
+      <div class="contador-item">
+        <span class="contador-numero" id="horas">00</span>
+        <span class="contador-etiqueta">Hs</span>
+      </div>
+      <div class="contador-item">
+        <span class="contador-numero" id="minutos">00</span>
+        <span class="contador-etiqueta">Min</span>
+      </div>
+      <div class="contador-item">
+        <span class="contador-numero" id="segundos">00</span>
+        <span class="contador-etiqueta">Seg</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenedor Ubicación -->
+  <section class="contenedor-ubicacion">
+    <div class="tarjeta-ubicacion">
+      <h2 class="ubicacion-titulo">Ceremonia</h2>
+      <p class="lugar-nombre">Parroquia Santa Maria</p>
+      <p class="lugar-direccion">Av. 31  N°924</p>
+
+      <div class="mapa-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.0959736150007!2d-58.25890582328849!3d-37.858044736571614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959aaf18baa4add1%3A0x2a956893cb9e82c5!2sSt.%20Mary%20Parish!5e0!3m2!1sen!2sjp!4v1794352049253!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+
+      <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-como-llegar">
+        Cómo llegar
+      </a>
+    </div>
+  </section>
+
+  <!-- Contenedor Festejo -->
+  <section class="contenedor-festejo">
+    <div class="tarjeta-festejo">
+      <h2 class="festejo-titulo">Festejo</h2>
+      <p class="festejo-mensaje">Después de la ceremonia, los esperamos para celebrar juntos en:</p>
+      <p class="festejo-direccion">Calle 32 N°1395</p>
+      <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-como-llegar">
+        Cómo llegar
+      </a>
+    </div>
+  </section>
+
+  <!-- Contenedor Confirmación (RSVP) -->
+  <section class="contenedor-confirmacion">
+    <div class="tarjeta-confirmacion">
+      <h2 class="confirmacion-titulo">Confirmación</h2>
+      <p class="confirmacion-mensaje">Por favor, confirmanos tu presencia para que podamos organizar todo de la mejor manera.</p>
+      
+      <a href="https://wa.me/5492266480278?text=Hola!%20Quiero%20confirmar%20mi%20asistencia%20a%20la%20Comuni%C3%B3n%20de%20Gregoria" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="btn-whatsapp">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.53 1.77.816 2.788.816 3.182 0 5.767-2.587 5.769-5.766.001-3.182-2.585-5.802-5.767-5.802zm3.385 8.196c-.144.405-.837.774-1.17.824-.312.045-.634.053-1.002-.066-.341-.11-1.397-.514-2.42-1.426-.803-.715-1.347-1.597-1.503-1.865-.157-.269-.017-.415.118-.55.122-.121.271-.312.407-.468.136-.156.181-.266.271-.444.091-.178.046-.334-.023-.469-.068-.135-.612-1.474-.839-2.019-.221-.531-.446-.459-.612-.468l-.52-.01c-.181 0-.476.068-.724.338-.249.27-1.02 1-1.02 2.439 0 1.438 1.042 2.827 1.187 3.023.145.196 2.052 3.134 4.972 4.394 2.921 1.26 2.921.84 3.447.789.526-.051 1.701-.695 1.942-1.365.241-.67.241-1.246.168-1.366-.071-.121-.266-.192-.41-.336z"/>
+          <path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.35 5.01L2 22l5.12-1.32C8.57 21.52 10.23 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18.2c-1.63 0-3.15-.47-4.45-1.29l-.32-.2-3.05.79.82-2.96-.21-.34C3.89 14.88 3.4 13.48 3.4 12c0-4.74 3.86-8.6 8.6-8.6 4.74 0 8.6 3.86 8.6 8.6 0 4.74-3.86 8.6-8.6 8.6z"/>
+        </svg>
+        Confirmar por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

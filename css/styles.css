@@ -1,0 +1,321 @@
+/* ===================================================
+   INVITACIÓN PRIMERA COMUNIÓN - ESTILOS
+   =================================================== */
+
+:root {
+  --blanco: #ffffff;
+  --color-hueso: #f7f4ed;
+  --dorado: #c5a059;
+  --fuente-sacramento: 'Sacramento', cursive;
+  --fuente-principal: 'Raleway', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-hueso);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 15px;
+  gap: 30px;
+  font-family: var(--fuente-principal);
+}
+
+/* Mobile-First: Contenedor y Tarjeta de Bienvenida */
+.contenedor-bienvenida {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta-bienvenida {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.subtitulo {
+  color: var(--dorado);
+  font-size: 0.95rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.foto-comunion {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto 16px;
+}
+
+.foto-comunion img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.nombre {
+  font-family: var(--fuente-sacramento);
+  color: #2c3e50;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.mensaje {
+  color: #555555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Mobile-First: Contenedor Contador */
+.contenedor-contador {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.info-fecha {
+  margin-bottom: 22px;
+}
+
+.fecha-dia {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.fecha-hora {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--dorado);
+  letter-spacing: 1px;
+}
+
+.contador-titulo {
+  color: var(--dorado);
+  font-size: 0.95rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.contador-grid {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contador-item {
+  background-color: var(--blanco);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  border-radius: 12px;
+  padding: 10px 12px;
+  min-width: 65px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.contador-numero {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  line-height: 1.1;
+}
+
+.contador-etiqueta {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #777777;
+  margin-top: 4px;
+}
+
+/* Mobile-First: Contenedor Ubicación */
+.contenedor-ubicacion {
+  width: 100%;
+  max-width: 500px;
+}
+
+.tarjeta-ubicacion {
+  background-color: var(--blanco);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  border-radius: 18px;
+  padding: 26px 20px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.ubicacion-titulo {
+  color: var(--dorado);
+  font-size: 0.95rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.lugar-nombre {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.lugar-direccion {
+  color: #666666;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+.mapa-responsive {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.mapa-responsive iframe {
+  width: 100%;
+  height: 220px;
+  border: 0;
+  display: block;
+}
+
+.btn-como-llegar {
+  display: inline-block;
+  background-color: var(--dorado);
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 25px;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s ease;
+}
+
+.btn-como-llegar:hover {
+  opacity: 0.9;
+}
+
+/* Mobile-First: Contenedor Festejo */
+.contenedor-festejo {
+  width: 100%;
+  max-width: 500px;
+}
+
+.tarjeta-festejo {
+  background-color: var(--blanco);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  border-radius: 18px;
+  padding: 26px 20px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.festejo-titulo {
+  color: var(--dorado);
+  font-size: 0.95rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.festejo-mensaje {
+  color: #555555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.festejo-direccion {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* Mobile-First: Contenedor Confirmación */
+.contenedor-confirmacion {
+  width: 100%;
+  max-width: 500px;
+}
+
+.tarjeta-confirmacion {
+  background-color: var(--blanco);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  border-radius: 18px;
+  padding: 26px 20px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.confirmacion-titulo {
+  color: var(--dorado);
+  font-size: 0.95rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.confirmacion-mensaje {
+  color: #555555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #25d366;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 30px;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
+}
+
+/* Ajuste para pantallas mayores a tablets (Desktop) */
+@media (min-width: 768px) {
+  .contenedor-bienvenida {
+    max-width: 480px;
+  }
+
+  .tarjeta-bienvenida {
+    padding: 50px 35px;
+  }
+
+  .nombre {
+    font-size: 4.2rem;
+  }
+}
